@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { postData } from '../Redux/Actions'
 import './Form.css'
 
@@ -12,8 +11,6 @@ const Form = (props) => {
     const [title, setTitle] = useState(props.data?.title ? props.data?.title : '')
     const [body, setBody] = useState(props.data?.body ? props.data?.body : '')
     const [userId, setUserId] = useState(props.data?.userId ? props.data?.userId : '')
-
-
     const data = useSelector(state=> state.data)
     const { error } = data
 

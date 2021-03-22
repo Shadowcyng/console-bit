@@ -1,6 +1,5 @@
 import {
 	LOADING_DATA,
-
 	POST_DATA,
 	DELETE_DATA,
 	STORE_DATA,
@@ -11,7 +10,6 @@ const data = [];
 
 const initalState = {
 	docs: [],
-	doc: null,
 	loading: false,
 	error: null,
 };
